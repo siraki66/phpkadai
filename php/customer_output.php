@@ -3,18 +3,13 @@
 
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
- 
-$db_name = substr($url["heroku_e2556b4168bb606"], 1);
- 
-$db_host = $url["us-cdbr-iron-east-01.cleardb.net"];
- 
-$user = $url["root"];
-  
-$password = $url[""];
- 
-$dsn = "mysql:dbname=".$db_name.";host=".$db_host;
- 
-$pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+
+$server = $url["us-cdbr-iron-east-01.cleardb.net"];
+$username = $url["bef1c616153bbe"];
+$password = $url["2c68fd8d"];
+$db = substr($url["heroku_e2556b4168bb606"], 1);
+
+$pdo = new mysqli($server, $username, $password, $db);
 
 
 
