@@ -13,7 +13,7 @@
     PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
   );
   $dbh = new PDO($dsn,$user,$password,$options);
-  return $dbh;
+
 
 
 
