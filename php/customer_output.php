@@ -8,9 +8,9 @@ $db_name = substr($url["heroku_e2556b4168bb606"], 1);
  
 $db_host = $url["us-cdbr-iron-east-01.cleardb.net"];
  
-$user = $url["bef1c616153bbe"];
+$user = $url["root"];
   
-$password = $url[" 2c68fd8d"];
+$password = $url[""];
  
 $dsn = "mysql:dbname=".$db_name.";host=".$db_host;
  
