@@ -18,7 +18,6 @@ $pdo = new PDO(
 
 
 
-
 $sql=$pdo->prepare('insert into customer values(null, ?, ?, ?)');
 if ($sql->execute([$_REQUEST['name'], $_REQUEST['email'], $_REQUEST['password']])) {
 	echo '追加に成功しました。';
