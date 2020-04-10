@@ -2,19 +2,19 @@
 
 
 
-  $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
-  $db['heroku_e2556b4168bb606'] = ltrim($db[' mysql://bef1c616153bbe:2c68fd8d@us-cdbr-iron-east-01.cleardb.net/heroku_e2556b4168bb606?reconnect=true'], '/');
-  $dsn = "mysql:host={$db['us-cdbr-iron-east-01.cleardb.net']};dbname={$db['heroku_e2556b4168bb606']};charset=utf8";
-  $user = $db['bef1c616153bbe'];
-  $password = $db['2c68fd8d'];
-  $options = array(
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
-  );
-  $pdo = new PDO($dsn,$user,$password,$options);
-
-
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+ 
+$db_name = substr($url["heroku_e2556b4168bb606"], 1);
+ 
+$db_host = $url["us-cdbr-iron-east-01.cleardb.net"];
+ 
+$user = $url["bef1c616153bbe"];
+  
+$password = $url[" 2c68fd8d"];
+ 
+$dsn = "mysql:dbname=".$db_name.";host=".$db_host;
+ 
+$pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 
 
 
