@@ -15,7 +15,7 @@ if (isset($_SESSION['customer'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>ログインページ</title>
+  <title>ユーザー登録</title>
  </head>
    
 　<link rel="stylesheet" href="/css/login-about.css">

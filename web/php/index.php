@@ -11,7 +11,7 @@ if (isset($_SESSION['customer'])) {
     require'../require/before-header.php';
 }?>
 
-<title>index.php</title>
+<title>index画面</title>
   <?php include 'default.php'; ?>
 
   <?php include 'api.php'; ?>

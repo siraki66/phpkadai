@@ -25,15 +25,4 @@ echo "市町村は".$prefecture.$city.$city2."です";
 }
  ?>
 
-
-
-CLEARDB_DATABASE_URL: mysql://[ユーザー名]:[パスワード]@[ホスト名]/[データベース名]?reconnect=true
-CLEARDB_DATABASE_URL: mysql://b8c57c4db63b84:f97ff36a@us-cdbr-iron-east-01.cleardb.net/heroku_7539eec5c480d91?reconnect=true
-
-heroku config:set DB_DATABASE=heroku_7539eec5c480d91
-heroku config:set DB_HOST=us-cdbr-iron-east-01.cleardb.net
-heroku config:set DB_USERNAME=b8c57c4db63b84
-heroku config:set DB_PASSWORD=f97ff36a
-
-
  
