@@ -1,6 +1,19 @@
 <?php
-$pdo=new PDO('mysql:host=localhost;dbname=test;charset=utf8', 
-	'root', '');
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$db_name = substr($url["path"], 1);
+
+$db_host = $url["host"];
+
+$user = $url["user"];
+
+$password = $url["pass"];
+
+$dsn = "mysql:dbname=".$db_name.";host=".$db_host;
+
+$pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+
+
 $sql=$pdo->prepare('update sumaho set name=?, price=?, bench=? where id=?');
 if (empty($_REQUEST['name'])) {
 	echo '商品名を入力してください。';
