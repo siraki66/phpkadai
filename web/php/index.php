@@ -47,7 +47,8 @@ $dsn = "mysql:dbname=".$db_name.";host=".$db_host;
 
 $pdo=new PDO($dsn,$user,$password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 
-$pdo = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', ''); foreach ($pdo->query('select * from sumaho') as $row) {
+// $pdo = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', ''); foreach ($pdo->query('select * from sumaho') as $row)
+ {
      echo '<tr>';
      echo '<p>';
      echo '<td>', $row['name'],'</td>';
