@@ -12,7 +12,7 @@
   <body onload="initialize()">
     <p>おすすめスマホショップのイオシス アキバ路地裏店です。</p>
 
-    <div id="map_canvas" style=" height:400px"></div>
+    <div id="map_canvas" style=" height:150px"></div>
 
   </body>
 </html>
@@ -23,7 +23,7 @@
   function initialize() {
   var latlng = new google.maps.LatLng(35.698878,139.770640);
   var opts = {
-    zoom: 11,
+    zoom: 16,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };

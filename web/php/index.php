@@ -62,17 +62,8 @@ foreach ($pdo->query('select * from sumaho') as $row) {
 
 </tbody>
 </table>
-<b></br>
-<b></br>
-<b></br>
-<b></br>
-<b></br>
-<b></br>
+
 <link rel="stylesheet" href="/css/styles.css">
-
-
-
-
 
 
 <?PHP  require'../require/footer.php'; ?>
