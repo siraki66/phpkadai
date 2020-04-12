@@ -16,10 +16,10 @@ if (isset($_SESSION['customer'])) {
    　 <input type="text" name="name" placeholder="スマホ名"  required="required" >
 　  </p>
  　 <p> 
- 　   <textarea name="price" placeholder="中古未使用相場(整数で5~6桁で入力ください。)" required="required" pattern="\d{5,6}"></textarea>
+ 　  <input type="text" name="price" placeholder="中古未使用相場(整数で5~6桁で入力ください。)" required="required" pattern="\d{5,6}">
  　 </p>
  　 <p> 
- 　   <textarea name="bench" placeholder="ベンチマーク(整数で5~6桁で入力ください。)" required="required" pattern="\d{5,6}"></textarea>
+ 　  <input type="text" name="bench" placeholder="ベンチマーク(整数で5~6桁で入力ください。)" required="required" pattern="\d{5,6}">
 　  </p>
 　　<a href="index.php" class="back">Back</a>
 　    <input type="submit">
