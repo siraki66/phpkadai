@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content=" 10; url=index.php">
+<meta http-equiv="refresh" content=" 2; url=index.php">
 <?php
 $post=$_POST["address"];
 if(preg_match("/^\d{7}$/",$post)){
