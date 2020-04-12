@@ -21,7 +21,7 @@
 ## 説明
 コスパが良いスマートフォンをまとめたアプリケーションを作成致しました。
 ## アプリURL
-https://ico-list.work
+https://phpkadai.herokuapp.com/php/index.php
 
 ## 実装機能
 <h3>todoリスト関連</h3>
@@ -47,5 +47,5 @@ https://ico-list.work
 
 [qiita](https://qiita.com/siraki)
 
-[github](https://github.com/siraki66/port-real)
+[github](https://github.com/siraki66/phpkadai)
 
