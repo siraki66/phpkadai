@@ -16,7 +16,7 @@ if (isset($_SESSION['customer'])) {
    　 <input type="text" name="name" placeholder="スマホ名"  required="required" >
 　  </p>
  　 <p> 
- 　   <textarea name="price" placeholder="中古未使用相場" required="required"></textarea>
+ 　   <textarea name="price" placeholder="中古未使用相場" required="required" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"></textarea>
  　 </p>
  　 <p> 
  　   <textarea name="bench" placeholder="ベンチマーク" required="required"></textarea>

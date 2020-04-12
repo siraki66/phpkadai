@@ -66,6 +66,7 @@ foreach ($sql as $row) {
 ?>
 </div>
 
+<b></br>
 
 <?PHP
 require'../require/footer.php';
