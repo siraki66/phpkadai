@@ -21,8 +21,7 @@
 
 ## 説明
 コスパが良いスマートフォンをまとめたアプリケーションを作成致しました。
-## アプリURL
-https://phpkadai.herokuapp.com/php/index.php
+
 
 ## 実装機能
 <h3>todoリスト関連</h3>
