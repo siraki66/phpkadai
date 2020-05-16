@@ -45,7 +45,7 @@
 
 ## Author
 
-[qiita](https://qiita.com/siraki)
+[qiita](https://qiita.com/matsuma)
 
 [github](https://github.com/siraki66/phpkadai)
 
